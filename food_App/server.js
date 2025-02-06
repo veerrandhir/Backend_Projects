@@ -11,7 +11,7 @@ dotenv.config();
 connectDb();
 // rest object
 const app = express();
-// middlewarwe is cors which tell Meet me while going
+// middleware is cors which tell Meet me while going
 app.use(cors());
 //to use json format
 app.use(express.json());
@@ -21,7 +21,10 @@ app.use(morgan("dev"));
 
 //We will tell to the server about our routes we decleared using app.use
 app.use("/api/v1/test/", require("./routes/testRoutes"));
-app.use("/api/v1/auth/", require("./routes/authRouter"))
+app.use("/api/v1/auth/", require("./routes/authRouter"));
+app.use("/api/v1/user/", require("./routes/authRouter"));
+app.use("/api/v1/update/", require("./routes/authRouter"));
+
 //main route
 // URL : http://localhost:8000
 app.get("/", (req, res) => {

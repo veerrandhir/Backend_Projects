@@ -33,6 +33,10 @@ const userSchema = new mongoose.Schema(
       dafault:
         "https://cdn.vectorstock.com/i/1000v/30/97/flat-business-man-user-profile-avatar-icon-vector-4333097.jpg ",
     },
+    answer:{
+      type: String,
+      required: [true, "What is your name:"] 
+    }
   },
   { timestamps: true }
 );
