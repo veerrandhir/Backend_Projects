@@ -274,6 +274,7 @@ const deleteUserController = async (req, res) => {
     });
   }
 };
+
 module.exports = {
   registerController,
   loginUser,
