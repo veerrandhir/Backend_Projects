@@ -95,8 +95,8 @@ const loginUser = async (req, res) => {
     return res.status(200).send({
       success: true,
       message: "Login successful",
-      token,
-      user,
+      // token,
+      // user,
     });
   } catch (error) {
     console.error("Error occurred during login: ", error);

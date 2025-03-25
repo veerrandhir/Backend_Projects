@@ -20,12 +20,22 @@ app.use(morgan("dev"));
 // connectDb connection setting
 
 //We will tell to the server about our routes we decleared using app.use
-app.use("/api/v1/test", require("./routes/testRoutes"));
-app.use("/api/v1/auth", require("./routes/authRouter"));
-app.use("/api/v1/user", require("./routes/authRouter"));
-app.use("/api/v1/update", require("./routes/authRouter"));
-app.use("/api/v1/resturant", require("./routes/resturantRouter"));
 
+// Test router
+app.use("/api/v1/test", require("./routes/testRoutes"));
+
+// authenticate router
+app.use("/api/v1/auth", require("./routes/authRouter"));
+
+// User router
+app.use("/api/v1/user", require("./routes/authRouter"));
+// update router
+app.use("/api/v1/update", require("./routes/authRouter"));
+// resturant router
+
+app.use("/api/v1/resturant", require("./routes/resturantRouter"));
+// category router
+app.use("/api/v1/category", require("./routes/catetoryRouter"));
 //main route
 // URL : http://localhost:8000
 app.get("/", (req, res) => {

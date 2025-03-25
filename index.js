@@ -106,28 +106,122 @@
 
 // console.log("min value is:", heap.getMin());
 
-let array = [
-  12, 5645, 0, 645, 4789, 548, 748, 468488, 5646, 486, 41, 116, 8546, 585, 97,
-  6987, 4655, 654, 464, 84798, 45, 99, 48, 9795, 746, 564653, 53411, 56554,
-  84544, 4112, 564,
-];
-// we we have to search for 99 wether this exist in the array or not
-let num = 99;
-for (let i = 0; i < array.length; i++) {
-  if (array[i] == num) {
-    console.log("your number is found at :", i);
-    i++
-    break
-  }else{
-    console.log("number not found Veer bhai");
-    
-    break;
-  }
-  }
-  
+// let array = [
+//   12, 5645, 0, 645, 4789, 548, 748, 468488, 5646, 486, 41, 116, 8546, 585, 97,
+//   6987, 4655, 654, 464, 84798, 45, 99, 48, 9795, 746, 564653, 53411, 56554,
+//   84544, 4112, 564,
+// ];
+// // we we have to search for 99 wether this exist in the array or not
+// let num = 99;
+// for (let i = 0; i < array.length; i++) {
+//   if (array[i] == num) {
+//     console.log("your number is found at :", i);
+//     i++;
+//     break;
+//   } else {
+//     // console.log("number not found Veer bhai");
+
+//     break;
+//   }
+// }
 
 // console.log(
 //   "your desired number is not available in this number try searching for another number"
 // );
 
 // console.log("num is at ", i);
+
+//write an programe to print 1- 100 numbers
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log("shivam" , i);
+// }
+
+// let number = 25; // You can change this to any number you'd like
+// let tableLength = 10; // Length of the multiplication table (e.g., 1 through 10)
+
+// console.log(`Multiplication Table for ${number}:`);
+// for (let i = 1; i <= tableLength; i++) {
+//   console.log(`${number} x ${i} = ${number * i}`);
+// }
+
+// write a programe to create a table form 10 - 30
+
+// for (let n = 10; n <= 20; n++) {
+//   for (let i = 1; i <= 10; i++) {
+//     console.log(`${n} x ${i} = ${n * i}`);
+
+//   }
+//   }
+// Q Array swaping Algo
+// let arr = [10,20,30,40,50]
+// let i = 0
+// let j = arr.length-1
+// while(i!=j){
+
+// let temp = arr[i]
+// arr[i]= arr[j]
+// arr[j]= temp
+// i++
+// j--
+
+// }
+// console.log(arr);
+//  Q Swap all 0 in left and 1 in right side
+// let arr = [
+//   1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0,
+// ];
+// let i = 0,
+//   j = 0;
+// while (i <= arr.length) {
+//   if (arr[i] == 0) {
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     // temp = arr;
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr);
+// Mix of all -ve and +ve elemements group all elemements right to left
+// let arr1 = [-1, 3, 4, -2, 9, -3, 6, -5, -6, -9];
+// let i = 0,
+//   j = 0;
+
+// while (i <= arr1.length) {
+//   if (arr1[i] < 0) {
+//     let temp = arr1[i];
+//     arr1[i] = arr1[j];
+//     arr1[j] = temp;
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr1, "while loop");
+
+// let arr = [1, 2, 3, -2, -3, -9, 5, 6, -6, 55, -95];
+// let i = 0,
+//   j = 0;
+
+// while (i < arr.length) {
+//   if (arr[i] > 0) {
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr);
+//
+// QQ print Each charactors of strings in new line
+// let s = prompt("Enter any string");
+// let temp = "";
+// for (let i = s.length - 1; i >= 0; i--) {
+//   console.log(s[i]);
+//   temp = temp + s[i];
+// }
+// console.log(temp);
+// if ((s = temp)) console.log("paradome");
+
