@@ -225,3 +225,61 @@
 // console.log(temp);
 // if ((s = temp)) console.log("paradome");
 
+// let pallindrome = true;
+// let s = prompt("enter a string");
+// let i = 0,
+//   j = s.length - 1;
+// while (i < j) {
+//   if (s.charAt(i) != s.charAt(j)) {
+//     // console.log("Not pallindrome");
+//     pallindrome = false;
+//     break;
+//   }
+//   i++;
+//   j--;
+// }
+// if (pallindrome) console.log("pallindrome");
+// else console.log("NO pallindrome");
+
+// Q Toggle each character // ## Note this code is not working Need to check it
+
+// let s = "aaffdeSdeEdeDeDeeFF";
+// console.log(s);
+// let toggle = "";
+// for (let i = 0; i < s.length - 1; i++) {
+//   // let ch = charAt(i);
+//   // console.log(ch);
+
+//   if (s.charCodeAt(i) >= 65 && s.charCodeAt(i) <= 90) {
+//     toggle = toggle + String.fromCharCode(s.charCodeAt(i) + 32);
+//   } else if (s.charCodeAt(i) >= 97 && charCodeAt(i) <= 122) {
+//     toggle = toggle + String.fromCharCode(s.charCodeAt(i) - 32);
+//   }
+// }
+
+// console.log(toggle);
+
+// console.log(+true);
+// console.log(typeof +false);
+// // console.dir("Debugging information.");
+
+// for (let i= 0 ; i< 3; i++){
+//   setTimeout(()=>console.log(i), 1)
+// }
+
+// let data = "size";
+// const bird = {
+//   size: "small",
+// };
+// console.log(bird[data]);
+// console.log(bird["size"]);
+// console.log(bird.size);
+// console.log(bird.data);
+
+/// case
+// let c = { name: "peter" };
+// let d;
+// d = c;
+// console.log(d["name"]);
+// c.name = "mark";
+// console.warn(c.name);
